@@ -1,0 +1,16 @@
+export const homeObjOne = {
+    lightBg: false,
+    primary: true,  
+    lightBg: false,
+    imgStart: '',
+    lightTopLine: true,
+    lightTextDesc: true,
+    buttonLabel: 'Get Started',
+    desccription: 'We use our understanding of risk to drive opportunity, so our clients can enjoy better risk sadjusted returns and smoother sailing.',
+    headline: 'INVEST SAFE,SMART',
+    lightText: true,
+    topLine: 'Ecotrics Financials',
+    start:'',
+    img:'',
+    alt:'ds',
+}
