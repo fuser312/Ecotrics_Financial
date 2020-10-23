@@ -11,6 +11,6 @@ export const homeObjOne = {
     lightText: true,
     topLine: 'Ecotrics Financials',
     start:'',
-    img:'',
-    alt:'ds',
+    img: require('../../assets/stockProfit2.svg'),
+    alt:'Stock Photo of Stock Profit',
 }

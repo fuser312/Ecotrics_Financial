@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const InfoSec = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
   color: #fff;
   padding: 160px 0;
   background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};

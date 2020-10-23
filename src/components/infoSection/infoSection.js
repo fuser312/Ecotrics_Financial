@@ -46,11 +46,12 @@ const InfoSection = ({
                   </Button>
                 </Link>
               </TextWrapper>
+              </InfoColumn>
+                  
               <InfoColumn>
-                  <ImgWrapper start={start}>
+              <ImgWrapper start={start}>
                       <img src= {img} alt={alt}/>
                   </ImgWrapper>
-              </InfoColumn>
             </InfoColumn>
           </InfoRow>
         </Container>
@@ -60,3 +61,5 @@ const InfoSection = ({
 };
 
 export default InfoSection;
+
+
