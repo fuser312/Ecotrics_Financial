@@ -8,10 +8,9 @@ export const InfoSec = styled.div`
 
 export const InfoRow = styled.div`
   display: flex;
-  /* margin: 0 -15px -15px -15px; */
+  margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
@@ -19,7 +18,9 @@ export const InfoColumn = styled.div`
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
-  
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
   @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;
@@ -29,7 +30,7 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 700px;
+  max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
   @media screen and (max-width: 768px) {
@@ -38,7 +39,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 700px;
+  max-width: 555px;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
@@ -70,10 +71,9 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 700px;
+  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
-  text-align: justify;
 `;
