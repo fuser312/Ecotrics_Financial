@@ -1,0 +1,31 @@
+export const homeObjOne = {
+    lightBg: false,
+    primary: true,  
+    imgStart: '',
+    lightTopLine: true,
+    lightTextDesc: true,
+    buttonLabel: 'Get Started',
+    description: 'We use our understanding of risk to drive opportunity, so our clients can enjoy better risk sadjusted returns and smoother sailing.',
+    headline: 'INVEST SAFE,SMART',
+    lightText: true,
+    topLine: 'Ecotrics Financials',
+    start:'',
+    img: require('../../assets/stockProfit2.svg'),
+    alt:'Stock Photo of Stock Profit',
+}
+
+export const homeObjTwo = {
+    lightBg: true,
+    primary: true,  
+    imgStart: 'start',
+    lightTopLine: false,
+    lightTextDesc: false,
+    buttonLabel: 'Get Started',
+    description: 'ECOTRICS Is An Indian Stock Market Trading advisory firm based  in Bangalore To diversify Trading Financial Services In India. A Trading Style,Technical Analysis and Technical Tables Chart Of Your First Trade. ECOTRICS The Trading Platform For Liking It So That You Can Get Understood The Various Modifications Of Trading Financial Investments All Over India. Our 9+ Years of experience, Technology-driven quality research, Easy to follow signals and Proven track record made us the top investment advisory. ECOTRICS aims to change the perception of Trading in people’s minds. We want to establish that Responsible Trading is always rewarding experience.We provide our entrepreneurs, strategic shareholders and venture capital clients with independent advice, empowering them to make informed decisions at all points in the listing process. ',
+    headline: 'INVEST SAFE,SMART',
+    lightText: false,
+    topLine: 'Ecotrics Financials',
+    start:'true',
+    img: require('../../assets/stockProfit.svg'),
+    alt:'Stock Photo of Stock Profit',
+}
