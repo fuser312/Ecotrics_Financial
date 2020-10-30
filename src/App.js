@@ -5,11 +5,13 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage';
 import Products from './pages/Products/Products';
 import Services from './pages/Services/Services';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar/>
         <Switch>
           <Route path="/" exact component={HomePage} />
@@ -17,6 +19,7 @@ function App() {
           <Route path="/products" exxact component={Products} />
         </Switch>
         <Footer/>
+      
     </Router>
   );
 }
