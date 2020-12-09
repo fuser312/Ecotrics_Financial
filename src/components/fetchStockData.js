@@ -7,7 +7,7 @@ const fetchStockData = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(()=> {
-        Axios.get('http://mboum.com/api/v1/qu/quote/?symbol=AAPL,F&apikey=vdxSh0PcgTcX82GT0LIJuDmjesuFoizUbkP4cbT2SkCK8bzaGQmBbwQn6eUj')
+        Axios.get('https://mboum.com/api/v1/qu/quote/?symbol=AAPL,F&apikey=vdxSh0PcgTcX82GT0LIJuDmjesuFoizUbkP4cbT2SkCK8bzaGQmBbwQn6eUj')
         .then(res => {
             console.log(res);
             console.log(`length is ${res.length}`)
