@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Products from './pages/Products/Products';
 import Services from './pages/Services/Services';
 import ScrollToTop from './components/ScrollToTop';
+import LiveQuote from './pages/LiveQuotes/LiveQuote';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/services" exxact component={Services} />
           <Route path="/products" exxact component={Products} />
+          <Route path="/live_quotes" exxact component={LiveQuote} />
         </Switch>
         <Footer/>
       

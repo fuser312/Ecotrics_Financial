@@ -64,6 +64,12 @@ const Navbar = () => {
                         Products
                     </NavLinks>
                 </NavItem>
+
+                <NavItem>
+                    <NavLinks to = '/live_quotes'>
+                        Live Quotes
+                    </NavLinks>
+                </NavItem>
             
                 <NavItem>
                     <NavLinks to = '/about_us'>
