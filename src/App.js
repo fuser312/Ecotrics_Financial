@@ -18,7 +18,7 @@ function App() {
           <Route path="/" exact component={HomePage} />
           <Route path="/services" exxact component={Services} />
           <Route path="/products" exxact component={Products} />
-          <Route path="/live_quotes" exxact component={LiveQuote} />
+          {/* <Route path="/live_quotes" exxact component={LiveQuote} /> */}
         </Switch>
         <Footer/>
       

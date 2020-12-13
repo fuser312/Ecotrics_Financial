@@ -25,7 +25,7 @@ const LiveQuote = () => {
             <ul>
                 {
                     posts.map(post => (
-                    <li key = {post.bookValue}>{post.averageDailyVolume10Day}</li>
+                    <li key = {post.bookValue}>Ye data hai API se  {post.averageDailyVolume10Day}</li>
                     ))
                 }
             </ul>
