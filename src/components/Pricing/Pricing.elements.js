@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const MainPricingHeading = styled.h1`
+  color: #fff;
+  font-size: 60px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+`;
+
+
 export const PricingSection = styled.div`
   padding: 100px 0 160px;
   display: flex;
@@ -47,6 +55,7 @@ export const PricingCard = styled(Link)`
   width: 280px;
   height: 500px;
   text-decoration: none;
+  margin-left: 40px;
   border-radius: 4px;
   &:nth-child(2) {
     margin: 24px;
