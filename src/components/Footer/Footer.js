@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/logo.jpeg";
+import emailjs from "emailjs";
 import {
   FooterContainer,
   FooterSubHeading,
@@ -24,16 +25,33 @@ import {
 import { Button } from "../../globalStyles";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
+
+
 const Footer = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('gmail', 'template_n7v1hco', e.target, 'user_S34QiVX4o4XGReLliqF29')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+
   return (
     <FooterContainer>
       <FooterSubscription>
         <FooterSubHeading>
-          Join our exclusive membership to recieve the latest news and trends.
+          Join our exclusive membership, cntact us now.
         </FooterSubHeading>
-        <FooterSubText>You can unsubscribe at any time</FooterSubText>
-        <Form>
+        <FooterSubText>Get a free trial now</FooterSubText>
+        <Form onSubmit={sendEmail}>
           <FormInput name="email" type = 'email' placeholder="Your Email" />
+          <FormInput name="name" type = 'text' placeholder="Your Name" />
+          <FormInput name="phone" type = 'tel' placeholder="Your Phone No" />
             <Button fontBig>Subscribe</Button>
         </Form>
       </FooterSubscription>
